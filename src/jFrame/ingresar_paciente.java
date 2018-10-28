@@ -5,6 +5,8 @@
  */
 package jFrame;
 
+import ejercisio2practico3.Paciente;
+
 /**
  *
  * @author Administrador
@@ -28,8 +30,6 @@ public class ingresar_paciente extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -37,66 +37,90 @@ public class ingresar_paciente extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
+        jTextField_NombreAp = new javax.swing.JTextField();
+        jTextFieldSexo = new javax.swing.JTextField();
+        jTextField_Documento = new javax.swing.JTextField();
+        jTextField_Fechadenacimiento = new javax.swing.JTextField();
+        jTextFieldDireccion = new javax.swing.JTextField();
+        jTextField_Correo = new javax.swing.JTextField();
         jToggleButton1 = new javax.swing.JToggleButton();
         jToggleButton2 = new javax.swing.JToggleButton();
-        jTextField1 = new javax.swing.JTextField();
+        jTextField_Telefono = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("Tipo de Contracto : ");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 120, 30));
-
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Temporal", "Permanente" }));
-        jComboBox1.setSelectedItem(getJMenuBar());
-        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 10, 120, -1));
-
         jLabel2.setText("Correo :");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 360, -1, -1));
 
         jLabel3.setText("Nombre Apellido : ");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, 30));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, -1, 30));
 
         jLabel4.setText("Sexo : ");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, -1));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, -1, -1));
 
         jLabel5.setText("Direccion : ");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, -1, -1));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, -1, -1));
 
         jLabel6.setText("Documento : ");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, -1, -1));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, -1, -1));
 
         jLabel7.setText("Fecha de nacimeiento :");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, -1, 20));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, -1, 20));
 
         jLabel9.setText("Telefono : ");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, -1, -1));
-        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 70, 270, -1));
-        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 110, 270, -1));
-        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 210, 270, -1));
-        jPanel1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 250, 270, -1));
-        jPanel1.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, 270, -1));
-        jPanel1.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 350, 270, -1));
+
+        jTextField_NombreAp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField_NombreApActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jTextField_NombreAp, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, 270, -1));
+        jPanel1.add(jTextFieldSexo, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 80, 270, -1));
+        jPanel1.add(jTextField_Documento, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 180, 270, -1));
+        jPanel1.add(jTextField_Fechadenacimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 240, 270, -1));
+        jPanel1.add(jTextFieldDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 130, 270, -1));
+        jPanel1.add(jTextField_Correo, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 350, 270, -1));
 
         jToggleButton1.setText("Volver");
         jPanel1.add(jToggleButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 460, 120, -1));
 
         jToggleButton2.setText("Ingresar");
+        jToggleButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton2ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jToggleButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, -1, -1));
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 300, 270, -1));
+        jPanel1.add(jTextField_Telefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 300, 270, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 500));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
+        Paciente nuevo = new Paciente();
+        try{
+            nuevo.NombreApellido(jTextField_NombreAp.getText());
+            nuevo.Correo(jTextField_Correo.getText());
+            nuevo.Direccion(jTextFieldDireccion.getText());
+            nuevo.Documento(jTextField_Documento.getText());
+            nuevo.Fechadenacimeiento(jTextField_Fechadenacimiento.getText());
+            nuevo.Telefono(jTextField_Telefono.getText());
+            nuevo.Sexo(jTextFieldSexo.getText());
+   
+            }catch(exepcion e) {
+                
+            }
+    }//GEN-LAST:event_jToggleButton2ActionPerformed
+
+    private void jTextField_NombreApActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_NombreApActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField_NombreApActionPerformed
 
     /**
      * @param args the command line arguments
@@ -135,8 +159,6 @@ public class ingresar_paciente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -145,13 +167,13 @@ public class ingresar_paciente extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextFieldDireccion;
+    private javax.swing.JTextField jTextFieldSexo;
+    private javax.swing.JTextField jTextField_Correo;
+    private javax.swing.JTextField jTextField_Documento;
+    private javax.swing.JTextField jTextField_Fechadenacimiento;
+    private javax.swing.JTextField jTextField_NombreAp;
+    private javax.swing.JTextField jTextField_Telefono;
     private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JToggleButton jToggleButton2;
     // End of variables declaration//GEN-END:variables
