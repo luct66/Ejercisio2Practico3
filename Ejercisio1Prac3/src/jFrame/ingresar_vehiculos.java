@@ -5,6 +5,12 @@
  */
 package jFrame;
 
+import ejercisio1prac3.Auto;
+import ejercisio1prac3.Camion;
+import ejercisio1prac3.Camioneta;
+import ejercisio1prac3.Minibus;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Administrador
@@ -40,7 +46,7 @@ public class ingresar_vehiculos extends javax.swing.JFrame {
         jTextField5 = new javax.swing.JTextField();
         jToggleButton1 = new javax.swing.JToggleButton();
         jToggleButton2 = new javax.swing.JToggleButton();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        jComboBox_vehiculo = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -48,23 +54,23 @@ public class ingresar_vehiculos extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setText("Veiculo :");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 90, 30));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 90, 30));
 
         jLabel2.setText("Km :");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 50, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 50, -1));
 
         jLabel3.setText("Marca : ");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, -1, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, -1, -1));
 
         jLabel4.setText("Patente :");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, -1, -1));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, -1, -1));
 
         jLabel5.setText("Plaza : ");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, -1, -1));
-        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 90, 130, -1));
-        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, 130, -1));
-        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 210, 130, -1));
-        jPanel1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 270, 130, -1));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, -1, -1));
+        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 130, -1));
+        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, 130, -1));
+        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 240, 130, -1));
+        jPanel1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 290, 130, -1));
 
         jToggleButton1.setText("Registrar");
         jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -82,9 +88,9 @@ public class ingresar_vehiculos extends javax.swing.JFrame {
         });
         jPanel1.add(jToggleButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 440, 130, -1));
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Auto", "Camion", "Minibus", "Camioneta" }));
-        jComboBox1.setSelectedItem(getJMenuBar());
-        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 30, 120, -1));
+        jComboBox_vehiculo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "auto", "camion", "minibus", "camioneta" }));
+        jComboBox_vehiculo.setSelectedItem(getJMenuBar());
+        jPanel1.add(jComboBox_vehiculo, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 80, 120, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 500));
 
@@ -98,6 +104,21 @@ public class ingresar_vehiculos extends javax.swing.JFrame {
     }//GEN-LAST:event_jToggleButton2MouseClicked
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
+        String vehiculo = jComboBox_vehiculo.getSelectedItem().toString();
+        switch(vehiculo){
+            case "auto" :
+                Auto nuevo = new Auto();
+                break;
+            case "camioneta" :
+                Camioneta nuevo = new Camioneta();
+                break;
+            case "minibus" :
+                Minibus nuevo = new Minibus();
+                break;
+            case "camion" :
+                Camion nuevo = new Camion();
+                break;
+        }
         
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
@@ -138,7 +159,7 @@ public class ingresar_vehiculos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox_vehiculo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
