@@ -40,10 +40,10 @@ public class ingresar_vehiculos extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
+        jTextField_Km = new javax.swing.JTextField();
+        jTextField_Marca = new javax.swing.JTextField();
+        jTextField_Patente = new javax.swing.JTextField();
+        jTextField_Plaza = new javax.swing.JTextField();
         jToggleButton1 = new javax.swing.JToggleButton();
         jToggleButton2 = new javax.swing.JToggleButton();
         jComboBox_vehiculo = new javax.swing.JComboBox<>();
@@ -67,10 +67,10 @@ public class ingresar_vehiculos extends javax.swing.JFrame {
 
         jLabel5.setText("Plaza : ");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, -1, -1));
-        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 130, -1));
-        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, 130, -1));
-        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 240, 130, -1));
-        jPanel1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 290, 130, -1));
+        jPanel1.add(jTextField_Km, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 130, -1));
+        jPanel1.add(jTextField_Marca, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, 130, -1));
+        jPanel1.add(jTextField_Patente, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 240, 130, -1));
+        jPanel1.add(jTextField_Plaza, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 290, 130, -1));
 
         jToggleButton1.setText("Registrar");
         jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -109,14 +109,11 @@ public class ingresar_vehiculos extends javax.swing.JFrame {
             case "auto" :
                 Auto nuevo = new Auto();
                 break;
-            case "camioneta" :
-                Camioneta nuevo = new Camioneta();
+            case "camioneta" :   
                 break;
             case "minibus" :
-                Minibus nuevo = new Minibus();
                 break;
             case "camion" :
-                Camion nuevo = new Camion();
                 break;
         }
         
@@ -166,10 +163,10 @@ public class ingresar_vehiculos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField_Km;
+    private javax.swing.JTextField jTextField_Marca;
+    private javax.swing.JTextField jTextField_Patente;
+    private javax.swing.JTextField jTextField_Plaza;
     private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JToggleButton jToggleButton2;
     // End of variables declaration//GEN-END:variables
