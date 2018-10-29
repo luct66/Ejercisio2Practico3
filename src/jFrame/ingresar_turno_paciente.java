@@ -107,20 +107,7 @@ public class ingresar_turno_paciente extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jToggleButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton3ActionPerformed
-        TurnoPaciente nuevo = new TurnoPaciente();
-        try{
-            nuevo.Nombre(jTextFieldNombrePaciente.getText());
-            nuevo.Documento(jTextFieldPacienteDocumento.getText());
-            nuevo.Medico(jTextFieldMedico.getText());
-            int dia = Integer.parseInt((String)jTextFieldDia.getText());
-            int mes = Integer.parseInt((String)jTextFieldMes.getText());
-            int año = Integer.parseInt((String)jTextFieldAño.getText());
-            int hora = Integer.parseInt((String)jTextFieldHora.getText());
-            int min = Integer.parseInt((String)jTextFieldMin.getText());
-            Fecha f = new Fecha(dia,mes,año);
-        }catch(exepcion , e){
-            
-        }
+
     }//GEN-LAST:event_jToggleButton3ActionPerformed
 
     /**

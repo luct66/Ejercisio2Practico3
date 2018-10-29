@@ -103,19 +103,7 @@ public class ingresar_paciente extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
-        Paciente nuevo = new Paciente();
-        try{
-            nuevo.NombreApellido(jTextField_NombreAp.getText());
-            nuevo.Correo(jTextField_Correo.getText());
-            nuevo.Direccion(jTextFieldDireccion.getText());
-            nuevo.Documento(jTextField_Documento.getText());
-            nuevo.Fechadenacimeiento(jTextField_Fechadenacimiento.getText());
-            nuevo.Telefono(jTextField_Telefono.getText());
-            nuevo.Sexo(jTextFieldSexo.getText());
-   
-            }catch(exepcion e) {
-                
-            }
+
     }//GEN-LAST:event_jToggleButton2ActionPerformed
 
     private void jTextField_NombreApActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_NombreApActionPerformed

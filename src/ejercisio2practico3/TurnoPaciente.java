@@ -12,6 +12,10 @@ public class TurnoPaciente {
     public int min;
     public String Medico;
 
+    TurnoPaciente(String string, int i, int i0) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public void Nombre(String text) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }

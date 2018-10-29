@@ -106,17 +106,7 @@ public class ingresar_medico extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
-        Medico nuevo = new Medico();    
-        try{
-            nuevo.NombreApellido(jTextFieldNombre.getText());
-            nuevo.Sexo(jTextFieldSexo.getText());
-            nuevo.Documento(jTextFieldDocumento.getText());
-            nuevo.Correo(jTextFieldCorreo.getText());
-            nuevo.Direccion(jTextFieldDireccion.getText());
-            nuevo.Fechadenacimeiento(jTextFieldFechadenacimiento.getText());
-            nuevo.Telefono(jTextFieldTelefono.getText());
-            }catch(exepcion e) {
-            }
+
     }//GEN-LAST:event_jToggleButton2ActionPerformed
 
     /**
