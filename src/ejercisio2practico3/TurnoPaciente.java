@@ -12,19 +12,13 @@ public class TurnoPaciente {
     public int min;
     public String Medico;
 
-    TurnoPaciente(String string, int i, int i0) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    
+    //se construye un constructor aca
+    TurnoPaciente(String i,int io,int io2){
+        Nombre=i;
+        Hora=io;
+        min=io2;
     }
-
-    public void Nombre(String text) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void Documento(String text) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void Medico(String text) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
+    
 }
