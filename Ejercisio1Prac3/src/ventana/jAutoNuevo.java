@@ -5,18 +5,22 @@
  */
 package ventana;
 
-import principal.Camion;
+import principal.Componentes;
+import principal.ParqueAutomotor;
+import principal.VentaNuevo;
+
+
 
 /**
  *
  * @author Administrador
  */
-public class jCamion extends javax.swing.JFrame {
+public class jAutoNuevo extends javax.swing.JFrame {
 
     /**
      * Creates new form ingresar_venta
      */
-    public jCamion() {
+    public jAutoNuevo() {
         initComponents();
         this.setLocationRelativeTo(null);
         jTextField_patente.setText("L4UT1");
@@ -44,7 +48,13 @@ public class jCamion extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jTextField_marca = new javax.swing.JTextField();
         jTextField_tipo = new javax.swing.JTextField();
-        jTextField_km = new javax.swing.JTextField();
+        jTextField_utilidad = new javax.swing.JTextField();
+        jLabel13 = new javax.swing.JLabel();
+        jTextField_aire = new javax.swing.JTextField();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jTextField_cistal = new javax.swing.JTextField();
+        jTextField_alarma = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -62,7 +72,7 @@ public class jCamion extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel5.setText("Patente :");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 100, 30));
-        jPanel1.add(jTextField_precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 240, 140, -1));
+        jPanel1.add(jTextField_precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 400, 140, -1));
         jPanel1.add(jTextField_patente, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 10, 140, -1));
 
         jToggleButton2.setText("Buscar");
@@ -75,7 +85,7 @@ public class jCamion extends javax.swing.JFrame {
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel7.setText("precio");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 100, 30));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, 100, 30));
 
         jToggleButton1.setText("Ingresar");
         jPanel1.add(jToggleButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 470, -1, -1));
@@ -89,11 +99,26 @@ public class jCamion extends javax.swing.JFrame {
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 100, 30));
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel12.setText("km");
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 100, 30));
+        jLabel12.setText("Utilidad :");
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, 90, 30));
         jPanel1.add(jTextField_marca, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 90, 140, -1));
         jPanel1.add(jTextField_tipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 130, 140, -1));
-        jPanel1.add(jTextField_km, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 180, 140, -1));
+        jPanel1.add(jTextField_utilidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 340, 200, -1));
+
+        jLabel13.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel13.setText("Aire Acondicionado :");
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 210, 30));
+        jPanel1.add(jTextField_aire, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 180, 200, -1));
+
+        jLabel14.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel14.setText("vanta cristales eléctricos : ");
+        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 250, 30));
+
+        jLabel15.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel15.setText("Alarma :");
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, 90, 30));
+        jPanel1.add(jTextField_cistal, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 240, 200, -1));
+        jPanel1.add(jTextField_alarma, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 300, 200, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 500));
 
@@ -101,18 +126,25 @@ public class jCamion extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jToggleButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton4MouseClicked
-        
+
     }//GEN-LAST:event_jToggleButton4MouseClicked
 
     private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
-       Camion nuevo = new Camion(51,"Mercedez-Benz","L4UT1",300,"Alquiler");
-       jTextField_marca.setText(nuevo.marca);
-       jTextField_km.setText(String.valueOf(nuevo.km_rec));
-       jTextField_tipo.setText(nuevo.tipo);
-       jTextField_patente.setText(nuevo.patente);
-       int precio = nuevo.alquiler();
-       jTextField_precio.setText(String.valueOf(precio));
-       
+        Componentes a = new Componentes(2,5,1);
+        VentaNuevo b;
+        b = new VentaNuevo(a,50,"Toyota","CA1220",1200,"Venta");
+        ParqueAutomotor c = new ParqueAutomotor();
+        c.vender_nuevo(b);
+        jTextField_marca.setText(b.marca);
+        jTextField_tipo.setText(b.tipo);
+        jTextField_patente.setText(b.patente);
+        jTextField_aire.setText("2");
+        jTextField_alarma.setText("5");
+        jTextField_cistal.setText("1");
+        jTextField_utilidad.setText("50");
+        int precio = b.vender();
+        jTextField_precio.setText(String.valueOf(precio));
+        
     }//GEN-LAST:event_jToggleButton2ActionPerformed
 
     /**
@@ -132,14 +164,46 @@ public class jCamion extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(jCamion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(jAutoNuevo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(jCamion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(jAutoNuevo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(jCamion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(jAutoNuevo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(jCamion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(jAutoNuevo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -176,7 +240,7 @@ public class jCamion extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new jCamion().setVisible(true);
+                new jAutoNuevo().setVisible(true);
             }
         });
     }
@@ -185,14 +249,20 @@ public class jCamion extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField_km;
+    private javax.swing.JTextField jTextField_aire;
+    private javax.swing.JTextField jTextField_alarma;
+    private javax.swing.JTextField jTextField_cistal;
     private javax.swing.JTextField jTextField_marca;
     private javax.swing.JTextField jTextField_patente;
     private javax.swing.JTextField jTextField_precio;
     private javax.swing.JTextField jTextField_tipo;
+    private javax.swing.JTextField jTextField_utilidad;
     private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JToggleButton jToggleButton2;
     private javax.swing.JToggleButton jToggleButton4;

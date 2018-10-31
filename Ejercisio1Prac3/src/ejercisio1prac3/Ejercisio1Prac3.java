@@ -41,7 +41,7 @@ public class Ejercisio1Prac3 {
          
       System.out.println(" ");
 
-   
+
    
     ParqueAutomotor p2=new ParqueAutomotor();
     Componente c2=new Componente();
@@ -69,6 +69,16 @@ public class Ejercisio1Prac3 {
 
             System.out.println(" ");
 
+            ParqueAutomotor c = new ParqueAutomotor();
+        jTextField_marca.setText(b.marca);
+        jTextField_tipo.setText(b.tipo);
+        jTextField_patente.setText(b.patente);
+        jTextField_aire.setText("2");
+        jTextField_alarma.setText("5");
+        jTextField_cistal.setText("1");
+        jTextField_utilidad.setText("35");
+       jTextField_precio.setText(String.valueOf(b.precio_base));
+       c.vender_usado(b);
    
    Camioneta camioneta=new Camioneta(2,40,"Ford","PA6699",0,"Alquiler");
    System.out.println("La camioneta que usted alquilo es:  ");
