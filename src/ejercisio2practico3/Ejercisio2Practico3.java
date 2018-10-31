@@ -1,6 +1,8 @@
 
 package ejercisio2practico3;
 
+import java.util.ArrayList;
+
 
 public class Ejercisio2Practico3 {
 
@@ -47,7 +49,7 @@ public class Ejercisio2Practico3 {
 
        medico1.CalculoPago();
        
-       
+
 
        
        TurnodeTrabajo turnotrabajo2=new TurnodeTrabajo("17/09/18","21/09/18",6,2); 
@@ -66,6 +68,14 @@ public class Ejercisio2Practico3 {
         
         
         
+       ArrayList CentroMedico=new ArrayList();
+       
+       CentroMedico.add(paciente1);
+       CentroMedico.add(medico1);
+       CentroMedico.add(medico2);
+       
+       
+
         
         
     }
