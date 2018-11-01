@@ -19,6 +19,30 @@ public class Componentes {
         this.cristales = cristales;
         this.alarma = alarma;
     }
+
+    public int getAire() {
+        return aire;
+    }
+
+    public void setAire(int aire) {
+        this.aire = aire;
+    }
+
+    public int getCristales() {
+        return cristales;
+    }
+
+    public void setCristales(int cristales) {
+        this.cristales = cristales;
+    }
+
+    public int getAlarma() {
+        return alarma;
+    }
+
+    public void setAlarma(int alarma) {
+        this.alarma = alarma;
+    }
     
     
     

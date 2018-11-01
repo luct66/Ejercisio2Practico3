@@ -12,17 +12,13 @@ package principal;
 public class Venta extends Vehiculo{
     
     public Componentes componentes;
-    public int Utilidad;
+    public int utilidad;
 
-    public Venta(Componentes componentes, int Utilidad, String marca, String patente, int precio_base, String tipo) {
+    public Venta(Componentes componentes, int utilidad, String marca, String patente, int precio_base, String tipo) {
         super(marca, patente, precio_base, tipo);
         this.componentes = componentes;
-        this.Utilidad = Utilidad;
+        this.utilidad = utilidad;
     }
-
-    
-
-   
-    
+ 
      
 }
