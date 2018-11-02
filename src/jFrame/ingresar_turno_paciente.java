@@ -56,6 +56,11 @@ public class ingresar_turno_paciente extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jToggleButton2.setText("volver");
+        jToggleButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jToggleButton2MouseClicked(evt);
+            }
+        });
         jPanel1.add(jToggleButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 460, -1, -1));
 
         jToggleButton3.setText("ingresar");
@@ -109,6 +114,17 @@ public class ingresar_turno_paciente extends javax.swing.JFrame {
     private void jToggleButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton3ActionPerformed
 
     }//GEN-LAST:event_jToggleButton3ActionPerformed
+
+    private void jToggleButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton2MouseClicked
+        // TODO add your handling code here:
+                                                  
+        // TODO add your handling code here:
+       inicio c = new inicio(); //crea un nuevo objeto inicio para ocultar esta ventana y llamar a la ventana inicio
+       c.setVisible(true); //aca quiere mostrar  inicio
+       this.setVisible(false);//aca quiere sacar ingreso
+                                         
+
+    }//GEN-LAST:event_jToggleButton2MouseClicked
 
     /**
      * @param args the command line arguments

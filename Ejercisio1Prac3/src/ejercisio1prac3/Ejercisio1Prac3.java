@@ -68,7 +68,7 @@ public class Ejercisio1Prac3 {
          camion1.precioalquiler();
 
             System.out.println(" ");
-
+/*
             ParqueAutomotor c = new ParqueAutomotor();
         jTextField_marca.setText(b.marca);
         jTextField_tipo.setText(b.tipo);
@@ -79,7 +79,7 @@ public class Ejercisio1Prac3 {
         jTextField_utilidad.setText("35");
        jTextField_precio.setText(String.valueOf(b.precio_base));
        c.vender_usado(b);
-   
+   */
    Camioneta camioneta=new Camioneta(2,40,"Ford","PA6699",0,"Alquiler");
    System.out.println("La camioneta que usted alquilo es:  ");
    
