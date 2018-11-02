@@ -16,6 +16,8 @@ public class mostrar_medico extends javax.swing.JFrame {
      */
     public mostrar_medico() {
         initComponents();
+                this.setLocationRelativeTo(null);
+
     }
 
     /**

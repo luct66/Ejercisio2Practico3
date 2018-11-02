@@ -16,6 +16,8 @@ public class pagar extends javax.swing.JFrame {
      */
     public pagar() {
         initComponents();
+                this.setLocationRelativeTo(null);
+
     }
 
     /**

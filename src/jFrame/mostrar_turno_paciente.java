@@ -16,6 +16,8 @@ public class mostrar_turno_paciente extends javax.swing.JFrame {
      */
     public mostrar_turno_paciente() {
         initComponents();
+                this.setLocationRelativeTo(null);
+
     }
 
     /**

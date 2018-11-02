@@ -16,6 +16,8 @@ public class mostrar_turno_trabajo extends javax.swing.JFrame {
      */
     public mostrar_turno_trabajo() {
         initComponents();
+        this.setLocationRelativeTo(null);
+
     }
 
     /**

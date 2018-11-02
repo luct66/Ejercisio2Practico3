@@ -12,12 +12,20 @@ import ejercisio2practico3.TurnoPaciente;
  * @author Administrador
  */
 public class ingresar_turno_paciente extends javax.swing.JFrame {
-
+public TurnoPaciente turno;
     /**
      * Creates new form ingresar_turno
      */
     public ingresar_turno_paciente() {
         initComponents();
+       this.setLocationRelativeTo(null);
+
+    }
+
+    ingresar_turno_paciente(TurnoPaciente turnopaciente) {
+
+    turno=turnopaciente;
+
     }
 
     /**
@@ -112,6 +120,10 @@ public class ingresar_turno_paciente extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jToggleButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton3ActionPerformed
+//Este el boton Ingresar
+
+ //jTextFieldNombrePaciente.setText(String.valueOf());
+
 
     }//GEN-LAST:event_jToggleButton3ActionPerformed
 

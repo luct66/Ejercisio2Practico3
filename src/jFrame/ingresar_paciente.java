@@ -21,6 +21,9 @@ public class ingresar_paciente extends javax.swing.JFrame {
      */
     public ingresar_paciente() {
         initComponents();
+        this.setLocationRelativeTo(null);
+
+        
     }
 
     /**
@@ -133,17 +136,20 @@ public class ingresar_paciente extends javax.swing.JFrame {
     private void jToggleButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton2MouseClicked
         // TODO add your handling code here:
         TurnoPaciente turnopaciente=new TurnoPaciente("17/09/18",17,60); 
-
+//aca quiero mandar esta objeto como parametro a turno de paciente pero no me deja 
+//desde este metodo
         Paciente paciente1=new Paciente("Nelson Romero ","Comodoro Rivadavia 1468", "Masculino", 38341234, "nelson34@live.com.ar", 12345678, "20/11/1997",turnopaciente);
 
-        jTextField_Nombre.setText(String.valueOf(paciente1.NombreApellido));
-        jTextFieldSexo.setText(String.valueOf(paciente1.Sexo));
-        jTextField_Documento.setText(String.valueOf(paciente1.Documento));
-        jTextField_Fechadenacimiento.setText(String.valueOf(paciente1.Fechadenacimeiento));
-        jTextFieldDireccion.setText(String.valueOf(paciente1.Direccion));
-        jTextField_Telefono.setText(String.valueOf(paciente1.Telefono));
-        jTextField_Correo.setText(String.valueOf(paciente1.Correo));
-
+        getjTextField_Nombre().setText(String.valueOf(paciente1.NombreApellido));
+        getjTextFieldSexo().setText(String.valueOf(paciente1.Sexo));
+        getjTextField_Documento().setText(String.valueOf(paciente1.Documento));
+        getjTextField_Fechadenacimiento().setText(String.valueOf(paciente1.Fechadenacimeiento));
+        getjTextFieldDireccion().setText(String.valueOf(paciente1.Direccion));
+        getjTextField_Telefono().setText(String.valueOf(paciente1.Telefono));
+        getjTextField_Correo().setText(String.valueOf(paciente1.Correo));
+        
+        //aca relleno los campos para generar los compos de textos 
+        
     }//GEN-LAST:event_jToggleButton2MouseClicked
 
     private void jToggleButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton1MouseClicked
@@ -207,6 +213,258 @@ public class ingresar_paciente extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField_Nombre;
     private javax.swing.JTextField jTextField_Telefono;
     private javax.swing.JToggleButton jToggleButton1;
-    private javax.swing.JToggleButton jToggleButton2;
+    public javax.swing.JToggleButton jToggleButton2;
     // End of variables declaration//GEN-END:variables
+
+    /**
+     * @return the jButton1
+     */
+    public javax.swing.JButton getjButton1() {
+        return jButton1;
+    }
+
+    /**
+     * @param jButton1 the jButton1 to set
+     */
+    public void setjButton1(javax.swing.JButton jButton1) {
+        this.jButton1 = jButton1;
+    }
+
+    /**
+     * @return the jLabel2
+     */
+    public javax.swing.JLabel getjLabel2() {
+        return jLabel2;
+    }
+
+    /**
+     * @param jLabel2 the jLabel2 to set
+     */
+    public void setjLabel2(javax.swing.JLabel jLabel2) {
+        this.jLabel2 = jLabel2;
+    }
+
+    /**
+     * @return the jLabel3
+     */
+    public javax.swing.JLabel getjLabel3() {
+        return jLabel3;
+    }
+
+    /**
+     * @param jLabel3 the jLabel3 to set
+     */
+    public void setjLabel3(javax.swing.JLabel jLabel3) {
+        this.jLabel3 = jLabel3;
+    }
+
+    /**
+     * @return the jLabel4
+     */
+    public javax.swing.JLabel getjLabel4() {
+        return jLabel4;
+    }
+
+    /**
+     * @param jLabel4 the jLabel4 to set
+     */
+    public void setjLabel4(javax.swing.JLabel jLabel4) {
+        this.jLabel4 = jLabel4;
+    }
+
+    /**
+     * @return the jLabel5
+     */
+    public javax.swing.JLabel getjLabel5() {
+        return jLabel5;
+    }
+
+    /**
+     * @param jLabel5 the jLabel5 to set
+     */
+    public void setjLabel5(javax.swing.JLabel jLabel5) {
+        this.jLabel5 = jLabel5;
+    }
+
+    /**
+     * @return the jLabel6
+     */
+    public javax.swing.JLabel getjLabel6() {
+        return jLabel6;
+    }
+
+    /**
+     * @param jLabel6 the jLabel6 to set
+     */
+    public void setjLabel6(javax.swing.JLabel jLabel6) {
+        this.jLabel6 = jLabel6;
+    }
+
+    /**
+     * @return the jLabel7
+     */
+    public javax.swing.JLabel getjLabel7() {
+        return jLabel7;
+    }
+
+    /**
+     * @param jLabel7 the jLabel7 to set
+     */
+    public void setjLabel7(javax.swing.JLabel jLabel7) {
+        this.jLabel7 = jLabel7;
+    }
+
+    /**
+     * @return the jLabel9
+     */
+    public javax.swing.JLabel getjLabel9() {
+        return jLabel9;
+    }
+
+    /**
+     * @param jLabel9 the jLabel9 to set
+     */
+    public void setjLabel9(javax.swing.JLabel jLabel9) {
+        this.jLabel9 = jLabel9;
+    }
+
+    /**
+     * @return the jPanel1
+     */
+    public javax.swing.JPanel getjPanel1() {
+        return jPanel1;
+    }
+
+    /**
+     * @param jPanel1 the jPanel1 to set
+     */
+    public void setjPanel1(javax.swing.JPanel jPanel1) {
+        this.jPanel1 = jPanel1;
+    }
+
+    /**
+     * @return the jTextFieldDireccion
+     */
+    public javax.swing.JTextField getjTextFieldDireccion() {
+        return jTextFieldDireccion;
+    }
+
+    /**
+     * @param jTextFieldDireccion the jTextFieldDireccion to set
+     */
+    public void setjTextFieldDireccion(javax.swing.JTextField jTextFieldDireccion) {
+        this.jTextFieldDireccion = jTextFieldDireccion;
+    }
+
+    /**
+     * @return the jTextFieldSexo
+     */
+    public javax.swing.JTextField getjTextFieldSexo() {
+        return jTextFieldSexo;
+    }
+
+    /**
+     * @param jTextFieldSexo the jTextFieldSexo to set
+     */
+    public void setjTextFieldSexo(javax.swing.JTextField jTextFieldSexo) {
+        this.jTextFieldSexo = jTextFieldSexo;
+    }
+
+    /**
+     * @return the jTextField_Correo
+     */
+    public javax.swing.JTextField getjTextField_Correo() {
+        return jTextField_Correo;
+    }
+
+    /**
+     * @param jTextField_Correo the jTextField_Correo to set
+     */
+    public void setjTextField_Correo(javax.swing.JTextField jTextField_Correo) {
+        this.jTextField_Correo = jTextField_Correo;
+    }
+
+    /**
+     * @return the jTextField_Documento
+     */
+    public javax.swing.JTextField getjTextField_Documento() {
+        return jTextField_Documento;
+    }
+
+    /**
+     * @param jTextField_Documento the jTextField_Documento to set
+     */
+    public void setjTextField_Documento(javax.swing.JTextField jTextField_Documento) {
+        this.jTextField_Documento = jTextField_Documento;
+    }
+
+    /**
+     * @return the jTextField_Fechadenacimiento
+     */
+    public javax.swing.JTextField getjTextField_Fechadenacimiento() {
+        return jTextField_Fechadenacimiento;
+    }
+
+    /**
+     * @param jTextField_Fechadenacimiento the jTextField_Fechadenacimiento to set
+     */
+    public void setjTextField_Fechadenacimiento(javax.swing.JTextField jTextField_Fechadenacimiento) {
+        this.jTextField_Fechadenacimiento = jTextField_Fechadenacimiento;
+    }
+
+    /**
+     * @return the jTextField_Nombre
+     */
+    public javax.swing.JTextField getjTextField_Nombre() {
+        return jTextField_Nombre;
+    }
+
+    /**
+     * @param jTextField_Nombre the jTextField_Nombre to set
+     */
+    public void setjTextField_Nombre(javax.swing.JTextField jTextField_Nombre) {
+        this.jTextField_Nombre = jTextField_Nombre;
+    }
+
+    /**
+     * @return the jTextField_Telefono
+     */
+    public javax.swing.JTextField getjTextField_Telefono() {
+        return jTextField_Telefono;
+    }
+
+    /**
+     * @param jTextField_Telefono the jTextField_Telefono to set
+     */
+    public void setjTextField_Telefono(javax.swing.JTextField jTextField_Telefono) {
+        this.jTextField_Telefono = jTextField_Telefono;
+    }
+
+    /**
+     * @return the jToggleButton1
+     */
+    public javax.swing.JToggleButton getjToggleButton1() {
+        return jToggleButton1;
+    }
+
+    /**
+     * @param jToggleButton1 the jToggleButton1 to set
+     */
+    public void setjToggleButton1(javax.swing.JToggleButton jToggleButton1) {
+        this.jToggleButton1 = jToggleButton1;
+    }
+
+    /**
+     * @return the jToggleButton2
+     */
+    public javax.swing.JToggleButton getjToggleButton2() {
+        return jToggleButton2;
+    }
+
+    /**
+     * @param jToggleButton2 the jToggleButton2 to set
+     */
+    public void setjToggleButton2(javax.swing.JToggleButton jToggleButton2) {
+        this.jToggleButton2 = jToggleButton2;
+    }
 }
