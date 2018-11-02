@@ -136,7 +136,7 @@ public class mostrar_turno_paciente extends javax.swing.JFrame {
 
     private void jToggleButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton2MouseClicked
         // TODO add your handling code here:
-          inicio c = new inicio(); //crea un nuevo objeto inicio para ocultar esta ventana y llamar a la ventana inicio
+        inicio c = new inicio(); //crea un nuevo objeto inicio para ocultar esta ventana y llamar a la ventana inicio
        c.setVisible(true); //aca quiere mostrar  inicio
        this.setVisible(false);//aca quiere sacar ingreso
                                          

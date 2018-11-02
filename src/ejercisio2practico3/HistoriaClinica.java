@@ -2,15 +2,23 @@
 
 package ejercisio2practico3;
 
+import java.util.LinkedList;
 
 public class HistoriaClinica implements ListaEnfermedades{
-    private EnfermedadTemporal enfermedad1;
-    private EnfermedadPermanente enfermedad2;
+    public LinkedList<EnfermedadTemporal> enfermedad1=new LinkedList();//aca se plantea lista enlazada
+    public LinkedList<EnfermedadPermanente> enfermedad2=new LinkedList();
 
     private Medicamentos medicamentos;
     private String GrupoSanguineo;
-
-    HistoriaClinica(EnfermedadPermanente enfermedad1, EnfermedadTemporal enfermedad2, Medicamentos medicamento1,String grupo1) {
+    
+    public void mostrartemporal(EnfermedadTemporal a){
+        enfermedad1.add(a);
+    }
+      public void mostrarpermanente(EnfermedadPermanente a){
+        enfermedad2.add(a);
+    }
+/*
+  HistoriaClinica(EnfermedadPermanente enfermedad1, EnfermedadTemporal enfermedad2, Medicamentos medicamento1,String grupo1) {
 
 this.enfermedad2=enfermedad1;
 this.enfermedad1=enfermedad2;
@@ -43,61 +51,53 @@ this.GrupoSanguineo=grupo1;
 
     /**
      * @return the enfermedad1
-     */
+     *//*
     public EnfermedadTemporal getEnfermedad1() {
         return enfermedad1;
     }
 
-    /**
-     * @param enfermedad1 the enfermedad1 to set
-     */
+ 
     public void setEnfermedad1(EnfermedadTemporal enfermedad1) {
         this.enfermedad1 = enfermedad1;
     }
 
-    /**
-     * @return the enfermedad2
-     */
+   
     public EnfermedadPermanente getEnfermedad2() {
         return enfermedad2;
     }
 
-    /**
-     * @param enfermedad2 the enfermedad2 to set
-     */
+  
     public void setEnfermedad2(EnfermedadPermanente enfermedad2) {
         this.enfermedad2 = enfermedad2;
     }
 
-    /**
-     * @return the medicamentos
-     */
+   
     public Medicamentos getMedicamentos() {
         return medicamentos;
     }
 
-    /**
-     * @param medicamentos the medicamentos to set
-     */
+  
     public void setMedicamentos(Medicamentos medicamentos) {
         this.medicamentos = medicamentos;
     }
 
-    /**
-     * @return the GrupoSanguineo
-     */
+ 
     public String getGrupoSanguineo() {
         return GrupoSanguineo;
     }
 
-    /**
-     * @param GrupoSanguineo the GrupoSanguineo to set
-     */
+  
     public void setGrupoSanguineo(String GrupoSanguineo) {
         this.GrupoSanguineo = GrupoSanguineo;
     }
 
     
     
-    
+    */
+
+    @Override
+    public void MostrarListaenfermedades() {
+
+
+    }
 }
