@@ -9,8 +9,21 @@ package ejercisio2practico3;
  *
  * @author Administrador
  */
-class Fecha {
+public class FechaClase {
     public int dia;
     public int mes;
     public int año;
+    public int horas;
+    public int minutos;
+
+ public FechaClase(int i, int i0, int i1, int i2, int i3) {
+dia=i;
+mes=i0;
+año=i1;
+horas=i2;
+mes=i3;
+        
+        
+    }
+    
 }

@@ -16,7 +16,7 @@ public class mostrar_paciente extends javax.swing.JFrame {
      */
     public mostrar_paciente() {
         initComponents();
-                this.setLocationRelativeTo(null);
+        this.setLocationRelativeTo(null);
 
     }
 

@@ -16,7 +16,8 @@ public class JContrato extends javax.swing.JFrame {
      */
     public JContrato() {
         initComponents();
-                this.setLocationRelativeTo(null);
+        this.setLocationRelativeTo(null);
+        
 
     }
 
@@ -59,7 +60,7 @@ public class JContrato extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel2.setBackground(new java.awt.Color(238, 238, 238));
+        jPanel2.setBackground(new java.awt.Color(239, 236, 236));
 
         Buscar.setText("Buscar");
         Buscar.addActionListener(new java.awt.event.ActionListener() {
@@ -196,7 +197,7 @@ public class JContrato extends javax.swing.JFrame {
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         // TODO add your handling code here:
         
-        inicio c = new inicio(); //crea un nuevo objeto inicio para ocultar esta ventana y llamar a la ventana inicio
+       inicio c = new inicio(); //crea un nuevo objeto inicio para ocultar esta ventana y llamar a la ventana inicio
        c.setVisible(true); //aca quiere mostrar  inicio
        this.setVisible(false);//aca quiere sacar ingreso
                                              

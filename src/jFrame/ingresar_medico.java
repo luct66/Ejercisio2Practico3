@@ -18,6 +18,8 @@ public class ingresar_medico extends javax.swing.JFrame {
      */
     public ingresar_medico() {
         initComponents();
+                this.setLocationRelativeTo(null);
+
     }
 
     /**
