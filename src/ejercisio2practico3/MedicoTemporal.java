@@ -2,7 +2,7 @@
 package ejercisio2practico3;
 
 
-public class MedicoTemporal extends Medico implements Contrato{
+public class MedicoTemporal extends Medico {
 
    private int horasminimas;
    private double Adicional;
@@ -22,7 +22,7 @@ this.Fechadenacimeiento=string;
     }
             
             
-    @Override
+    
     public void RealizarContrato() {  //realiza el contrato y el pago que se le realizara
     //int horastotales;
         
