@@ -22,7 +22,7 @@ this.Fechadenacimeiento=string;
     }
             
             
-   
+    @Override
     public void RealizarContrato() {  //realiza el contrato y el pago que se le realizara
     //int horastotales;
         
