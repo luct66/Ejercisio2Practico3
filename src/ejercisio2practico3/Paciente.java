@@ -4,12 +4,12 @@ package ejercisio2practico3;
 
 public class Paciente extends Persona {
 //public String GrupoSanguineo;
-private HistoriaClinica HistoriaClinica;    
+public HistoriaClinica HistoriaClinica;    
 //public Enfermedades ListadoEnfermedades; //Enfermedad permanente o temporal
 //public Medicamentos ListadoMedicamentos;   
-private TurnoPaciente turnopaciente; 
+public TurnoPaciente turnopaciente; 
 
- Paciente(String nelson_Romero_, String comodoro_Rivadavia_1468, String masculino, int string, String nelson34livecomar, int i, String string0, HistoriaClinica historia1, TurnoPaciente turnopaciente) {
+public Paciente(String nelson_Romero_, String comodoro_Rivadavia_1468, String masculino, int string, String nelson34livecomar, int i, String string0, TurnoPaciente turnopaciente) {
 
 this.NombreApellido=nelson_Romero_;
 this.Direccion=comodoro_Rivadavia_1468;
@@ -18,7 +18,7 @@ this.Telefono=string;
 this.Correo=nelson34livecomar;
 this.Documento=i;
 this.Fechadenacimeiento=string0;
-this.HistoriaClinica=historia1;
+
 this.turnopaciente=turnopaciente;
 
     }

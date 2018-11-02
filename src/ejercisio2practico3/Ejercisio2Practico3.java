@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class Ejercisio2Practico3 {
 
     public static void main(String[] args) {
-        
+        /*
         
        TurnoPaciente turnopaciente=new TurnoPaciente("17/09/18",17,60); 
        EnfermedadPermanente enfermedad1=new EnfermedadPermanente("HIV","10/03/18");
@@ -76,7 +76,7 @@ public class Ejercisio2Practico3 {
        
        
 
-        
+        */
         
     }
     

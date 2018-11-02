@@ -6,6 +6,9 @@
 package jFrame;
 
 import ejercisio2practico3.Paciente;
+import ejercisio2practico3.TurnoPaciente;
+
+//aca se importa las librerias que va a utilizar los text fields
 
 /**
  *
@@ -37,7 +40,7 @@ public class ingresar_paciente extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jTextField_NombreAp = new javax.swing.JTextField();
+        jTextField_Nombre = new javax.swing.JTextField();
         jTextFieldSexo = new javax.swing.JTextField();
         jTextField_Documento = new javax.swing.JTextField();
         jTextField_Fechadenacimiento = new javax.swing.JTextField();
@@ -46,6 +49,7 @@ public class ingresar_paciente extends javax.swing.JFrame {
         jToggleButton1 = new javax.swing.JToggleButton();
         jToggleButton2 = new javax.swing.JToggleButton();
         jTextField_Telefono = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -73,12 +77,12 @@ public class ingresar_paciente extends javax.swing.JFrame {
         jLabel9.setText("Telefono : ");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, -1, -1));
 
-        jTextField_NombreAp.addActionListener(new java.awt.event.ActionListener() {
+        jTextField_Nombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField_NombreApActionPerformed(evt);
+                jTextField_NombreActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField_NombreAp, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, 270, -1));
+        jPanel1.add(jTextField_Nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, 270, -1));
         jPanel1.add(jTextFieldSexo, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 80, 270, -1));
         jPanel1.add(jTextField_Documento, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 180, 270, -1));
         jPanel1.add(jTextField_Fechadenacimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 240, 270, -1));
@@ -88,7 +92,12 @@ public class ingresar_paciente extends javax.swing.JFrame {
         jToggleButton1.setText("Volver");
         jPanel1.add(jToggleButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 460, 120, -1));
 
-        jToggleButton2.setText("Ingresar");
+        jToggleButton2.setText("Generar");
+        jToggleButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jToggleButton2MouseClicked(evt);
+            }
+        });
         jToggleButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jToggleButton2ActionPerformed(evt);
@@ -97,18 +106,39 @@ public class ingresar_paciente extends javax.swing.JFrame {
         jPanel1.add(jToggleButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, -1, -1));
         jPanel1.add(jTextField_Telefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 300, 270, -1));
 
+        jButton1.setText("Ingresar");
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 460, -1, -1));
+
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 500));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
-
+        
+        
     }//GEN-LAST:event_jToggleButton2ActionPerformed
 
-    private void jTextField_NombreApActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_NombreApActionPerformed
+    private void jTextField_NombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_NombreActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField_NombreApActionPerformed
+        
+    }//GEN-LAST:event_jTextField_NombreActionPerformed
+
+    private void jToggleButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton2MouseClicked
+        // TODO add your handling code here:
+        TurnoPaciente turnopaciente=new TurnoPaciente("17/09/18",17,60); 
+
+        Paciente paciente1=new Paciente("Nelson Romero ","Comodoro Rivadavia 1468", "Masculino", 38341234, "nelson34@live.com.ar", 12345678, "20/11/1997",turnopaciente);
+
+        jTextField_Nombre.setText(String.valueOf(paciente1.NombreApellido));
+        jTextFieldSexo.setText(String.valueOf(paciente1.Sexo));
+        jTextField_Documento.setText(String.valueOf(paciente1.Documento));
+        jTextField_Fechadenacimiento.setText(String.valueOf(paciente1.Fechadenacimeiento));
+        jTextFieldDireccion.setText(String.valueOf(paciente1.Direccion));
+        jTextField_Telefono.setText(String.valueOf(paciente1.Telefono));
+        jTextField_Correo.setText(String.valueOf(paciente1.Correo));
+
+    }//GEN-LAST:event_jToggleButton2MouseClicked
 
     /**
      * @param args the command line arguments
@@ -147,6 +177,7 @@ public class ingresar_paciente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -160,7 +191,7 @@ public class ingresar_paciente extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField_Correo;
     private javax.swing.JTextField jTextField_Documento;
     private javax.swing.JTextField jTextField_Fechadenacimiento;
-    private javax.swing.JTextField jTextField_NombreAp;
+    private javax.swing.JTextField jTextField_Nombre;
     private javax.swing.JTextField jTextField_Telefono;
     private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JToggleButton jToggleButton2;

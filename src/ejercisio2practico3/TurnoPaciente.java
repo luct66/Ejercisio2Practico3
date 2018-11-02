@@ -14,7 +14,7 @@ public class TurnoPaciente {
 
     
     //se construye un constructor aca
-    TurnoPaciente(String i,int io,int io2){
+ public   TurnoPaciente(String i,int io,int io2){
         Nombre=i;
         Hora=io;
         min=io2;

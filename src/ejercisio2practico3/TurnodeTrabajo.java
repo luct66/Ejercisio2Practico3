@@ -8,7 +8,7 @@ public int HorasTrabajadas;
 public int HorasExtras;
 
 
-TurnodeTrabajo(String string, String string0, int i, int i0) {
+public TurnodeTrabajo(String string, String string0, int i, int i0) {
 this.Fechadeingreso=string;
 this.Fechadeegreso=string0;
 this.HorasTrabajadas=i;
