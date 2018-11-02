@@ -86,6 +86,11 @@ public class ingresar_turno_trabajo extends javax.swing.JFrame {
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, 40, 30));
 
         jToggleButton2.setText("volver");
+        jToggleButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jToggleButton2MouseClicked(evt);
+            }
+        });
         jPanel1.add(jToggleButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 460, -1, -1));
 
         jToggleButton3.setText("ingresar");
@@ -138,6 +143,14 @@ public class ingresar_turno_trabajo extends javax.swing.JFrame {
     private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField7ActionPerformed
+
+    private void jToggleButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton2MouseClicked
+        // TODO add your handling code here:
+          inicio c = new inicio(); //crea un nuevo objeto inicio para ocultar esta ventana y llamar a la ventana inicio
+       c.setVisible(true); //aca quiere mostrar  inicio
+       this.setVisible(false);//aca quiere sacar ingreso
+                                         
+    }//GEN-LAST:event_jToggleButton2MouseClicked
 
     /**
      * @param args the command line arguments

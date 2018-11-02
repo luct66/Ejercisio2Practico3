@@ -89,6 +89,11 @@ public class ingresar_medico extends javax.swing.JFrame {
         jPanel1.add(jTextFieldCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 350, 270, -1));
 
         jToggleButton1.setText("Volver");
+        jToggleButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jToggleButton1MouseClicked(evt);
+            }
+        });
         jPanel1.add(jToggleButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 460, 120, -1));
 
         jToggleButton2.setText("Ingresar");
@@ -108,6 +113,17 @@ public class ingresar_medico extends javax.swing.JFrame {
     private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
 
     }//GEN-LAST:event_jToggleButton2ActionPerformed
+
+    private void jToggleButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton1MouseClicked
+        // TODO add your handling code here:
+                                                  
+        // TODO add your handling code here:
+       inicio c = new inicio(); //crea un nuevo objeto inicio para ocultar esta ventana y llamar a la ventana inicio
+       c.setVisible(true); //aca quiere mostrar  inicio
+       this.setVisible(false);//aca quiere sacar ingreso
+                                             
+
+    }//GEN-LAST:event_jToggleButton1MouseClicked
 
     /**
      * @param args the command line arguments
