@@ -5,6 +5,9 @@
  */
 package jFrame;
 
+import ejercisio2practico3.Medico;
+import ejercisio2practico3.TurnoPaciente;
+import ejercisio2practico3.FechaClase;
 /**
  *
  * @author Administrador
@@ -70,6 +73,11 @@ public class mostrar_turno_paciente extends javax.swing.JFrame {
         jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 10, 240, -1));
 
         jToggleButton1.setText("Buscar");
+        jToggleButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jToggleButton1MouseClicked(evt);
+            }
+        });
         jPanel1.add(jToggleButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 10, -1, -1));
 
         jLabel2.setText("Min");
@@ -114,10 +122,10 @@ public class mostrar_turno_paciente extends javax.swing.JFrame {
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, -1, -1));
 
         jLabel12.setText("Fecha de nacimeiento :");
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, -1, 20));
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, -1, 20));
 
         jLabel13.setText("Telefono : ");
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 260, -1, -1));
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, -1, -1));
         jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 50, 270, -1));
         jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 90, 270, -1));
         jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 170, 270, -1));
@@ -143,6 +151,21 @@ public class mostrar_turno_paciente extends javax.swing.JFrame {
        this.setVisible(false);//aca quiere sacar ingreso
                                          
     }//GEN-LAST:event_jToggleButton2MouseClicked
+
+    private void jToggleButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton1MouseClicked
+        // TODO add your handling code here:
+     FechaClase fecha1=new FechaClase(20,12,2018,17,0);
+    TurnoPaciente turnopaciente=new TurnoPaciente("Lucas Zarate",fecha1,"Hernanandez"); 
+    jTextField2.setText(String.valueOf(turnopaciente.NombreApellido));
+    jTextField12.setText(String.valueOf(turnopaciente.fecha.año));
+    jTextField11.setText(String.valueOf(turnopaciente.fecha.mes));
+    jTextField10.setText(String.valueOf(turnopaciente.fecha.dia));
+    jTextField13.setText(String.valueOf(turnopaciente.fecha.horas));
+    jTextField9.setText(String.valueOf(turnopaciente.fecha.minutos));
+
+
+
+    }//GEN-LAST:event_jToggleButton1MouseClicked
 
     /**
      * @param args the command line arguments

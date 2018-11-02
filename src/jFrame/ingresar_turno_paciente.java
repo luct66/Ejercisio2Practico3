@@ -37,6 +37,8 @@ public TurnoPaciente turno;
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jButton1 = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
         jToggleButton2 = new javax.swing.JToggleButton();
         jToggleButton3 = new javax.swing.JToggleButton();
@@ -58,6 +60,10 @@ public TurnoPaciente turno;
         jLabel5 = new javax.swing.JLabel();
         jTextFieldNombrePaciente = new javax.swing.JTextField();
 
+        jButton1.setText("Buscar");
+
+        jTextField1.setText("Ingresar Documento");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -69,7 +75,7 @@ public TurnoPaciente turno;
                 jToggleButton2MouseClicked(evt);
             }
         });
-        jPanel1.add(jToggleButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 460, -1, -1));
+        jPanel1.add(jToggleButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 340, -1, 30));
 
         jToggleButton3.setText("ingresar");
         jToggleButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -77,7 +83,7 @@ public TurnoPaciente turno;
                 jToggleButton3ActionPerformed(evt);
             }
         });
-        jPanel1.add(jToggleButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, -1, -1));
+        jPanel1.add(jToggleButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, -1, -1));
 
         jLabel8.setText("Documento Paciente : ");
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, -1, 30));
@@ -114,7 +120,7 @@ public TurnoPaciente turno;
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 120, -1));
         jPanel1.add(jTextFieldNombrePaciente, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 40, 270, -1));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 500));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 400));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -181,6 +187,7 @@ public TurnoPaciente turno;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel15;
@@ -191,6 +198,7 @@ public TurnoPaciente turno;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextFieldAño;
     private javax.swing.JTextField jTextFieldDia;
     private javax.swing.JTextField jTextFieldHora;
