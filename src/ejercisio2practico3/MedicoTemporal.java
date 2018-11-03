@@ -7,7 +7,7 @@ public class MedicoTemporal extends Medico {
    private int horasminimas;
    private double Adicional;
 
-MedicoTemporal(TurnodeTrabajo turnotrabajo2,int horasmin, double i, double i0, String lautaro_Tapia, String v_del_Valle, String masculino, int i1, String lautarotapiagmailcom, int i2, String string) {
+public MedicoTemporal(TurnodeTrabajo turnotrabajo2,int horasmin, double i, double i0, String lautaro_Tapia, String v_del_Valle, String masculino, int i1, String lautarotapiagmailcom, int i2, String string) {
 this.turnodetrabajo=turnotrabajo2;
 this.horasminimas=horasmin;
 this.SueldoBase=i;
@@ -20,6 +20,8 @@ this.Correo=lautarotapiagmailcom;
 this.Telefono=i2;
 this.Fechadenacimeiento=string;
     }
+
+
             
             
     

@@ -6,6 +6,8 @@
 package jFrame;
 
 import ejercisio2practico3.Medico;
+import ejercisio2practico3.MedicoTemporal;
+import ejercisio2practico3.TurnodeTrabajo;
 
 /**
  *
@@ -101,6 +103,11 @@ public class ingresar_medico extends javax.swing.JFrame {
         jPanel1.add(jToggleButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 460, 120, -1));
 
         jToggleButton2.setText("Ingresar");
+        jToggleButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jToggleButton2MouseClicked(evt);
+            }
+        });
         jToggleButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jToggleButton2ActionPerformed(evt);
@@ -128,6 +135,22 @@ public class ingresar_medico extends javax.swing.JFrame {
                                              
 
     }//GEN-LAST:event_jToggleButton1MouseClicked
+
+    private void jToggleButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton2MouseClicked
+        // TODO add your handling code here:
+        TurnodeTrabajo turnotrabajo=new TurnodeTrabajo();
+        MedicoTemporal medico1=new MedicoTemporal(turnotrabajo,6,3000,20,"Marcos Aranda","Belgrano","Masculino",30306476,"aranda@gmail.com",373059,"20/03/80");
+        
+        jTextFieldNombre.setText(String.valueOf(medico1.NombreApellido));
+        jTextFieldSexo.setText(String.valueOf(medico1.Sexo));
+        jTextFieldDireccion.setText(String.valueOf(medico1.Direccion));
+        jTextFieldDocumento.setText(String.valueOf(medico1.Documento));
+        jTextFieldFechadenacimiento.setText(String.valueOf(medico1.Fechadenacimeiento));
+        jTextFieldTelefono.setText(String.valueOf(medico1.Telefono));
+        jTextFieldCorreo.setText(String.valueOf(medico1.Correo));
+
+        
+    }//GEN-LAST:event_jToggleButton2MouseClicked
 
     /**
      * @param args the command line arguments

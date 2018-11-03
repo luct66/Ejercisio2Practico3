@@ -17,5 +17,9 @@ this.HorasExtras=i0;
 
     }
 
+    public TurnodeTrabajo() {
+
+    }
+
     
 }
