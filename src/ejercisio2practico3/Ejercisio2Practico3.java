@@ -9,7 +9,7 @@ public class Ejercisio2Practico3 {
 
     public static void main(String[] args) {
         
-         inicio acesso = new inicio();
+        inicio acesso = new inicio();
         acesso.setVisible(true);
         /*
        TurnoPaciente turnopaciente=new TurnoPaciente("17/09/18",17,60); 

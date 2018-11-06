@@ -19,7 +19,7 @@ public class Camion extends Carga implements Alquiler {
         if(km_rec < 50){
             precio = precio_base + 200;
         }else{
-            precio = precio_base + (20 * km_rec)+200;
+            precio = precio_base + (20 * km_rec);
         }
         return precio;
     }

@@ -157,11 +157,11 @@ public class mostrar_turno_paciente extends javax.swing.JFrame {
      FechaClase fecha1=new FechaClase(20,12,2018,17,0);
     TurnoPaciente turnopaciente=new TurnoPaciente("Lucas Zarate",fecha1,"Hernanandez"); 
     jTextField2.setText(String.valueOf(turnopaciente.NombreApellido));
-    jTextField12.setText(String.valueOf(turnopaciente.fecha.año));
-    jTextField11.setText(String.valueOf(turnopaciente.fecha.mes));
-    jTextField10.setText(String.valueOf(turnopaciente.fecha.dia));
-    jTextField13.setText(String.valueOf(turnopaciente.fecha.horas));
-    jTextField9.setText(String.valueOf(turnopaciente.fecha.minutos));
+    jTextField12.setText(String.valueOf(turnopaciente.fecha.getAño()));
+    jTextField11.setText(String.valueOf(turnopaciente.fecha.getMes()));
+    jTextField10.setText(String.valueOf(turnopaciente.fecha.getDia()));
+    jTextField13.setText(String.valueOf(turnopaciente.fecha.getHoras()));
+    jTextField9.setText(String.valueOf(turnopaciente.fecha.getMinutos()));
 
 
 

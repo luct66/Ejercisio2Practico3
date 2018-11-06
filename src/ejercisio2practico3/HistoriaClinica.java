@@ -17,6 +17,8 @@ public class HistoriaClinica implements ListaEnfermedades{
       public void mostrarpermanente(EnfermedadPermanente a){
         enfermedad2.add(a);
     }
+      
+      
 /*
   HistoriaClinica(EnfermedadPermanente enfermedad1, EnfermedadTemporal enfermedad2, Medicamentos medicamento1,String grupo1) {
 

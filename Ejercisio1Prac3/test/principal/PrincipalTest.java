@@ -41,7 +41,7 @@ public class PrincipalTest {
      * Test of alquiler method, of class Auto.
      */
     @Test
-    public void testAlquilerAuto() {
+    public void testAlquilerAuto() { //aca pruevo cada metoodo parqa realizar una comparacion 
         System.out.println("alquiler");
         Auto nuevo = new Auto(3 , 4,"Audi","L4UT1",250,"ALQUILER");
         int esperado = 1350;
@@ -65,7 +65,7 @@ public class PrincipalTest {
             int result = nuevo.alquiler();
             assertEquals(expResult, result);
         }else{
-            int expResult = 300 + (20 * km)+200;
+            int expResult = 300 + (20 * km);
             int result = nuevo.alquiler();
             assertEquals(expResult, result);
         }
