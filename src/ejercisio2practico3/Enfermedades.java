@@ -7,4 +7,6 @@ public class Enfermedades { // compone a paciente
      public String Tipo;
 
     
+
+    
 }

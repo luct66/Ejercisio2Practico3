@@ -20,13 +20,14 @@ this.Fechadenacimeiento=string;
 
     }
     @Override
-    public void CalculoPago() { //Para realizar el pago se realiza un porcentaje adicional de 25
+    public double CalculoPago() { //Para realizar el pago se realiza un porcentaje adicional de 25
    double Pago=0;
     
       Pago=SueldoBase+(SueldoBase*(getAdicional()/100));  
         
       
       System.out.println("El pago total es:  "+Pago);
+      return Pago;
     }
 
     /**

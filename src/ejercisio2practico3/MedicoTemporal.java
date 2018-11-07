@@ -25,7 +25,7 @@ this.Fechadenacimeiento=string;
             
             
     
-    public void RealizarContrato() {  //realiza el contrato y el pago que se le realizara
+    public double RealizarContrato() {  //realiza el contrato y el pago que se le realizara
     //int horastotales;
         
       double Pago=0;
@@ -37,13 +37,16 @@ this.Fechadenacimeiento=string;
         
         if(turnodetrabajo.HorasExtras>0){
             Pago=SueldoBase+Adicional;
+      
         }
         else{
             Pago=SueldoBase;
+            
 
         }
         
         System.out.println("El pago para el medico temporal es: "+Pago);
+        return Pago;
 
     }
     

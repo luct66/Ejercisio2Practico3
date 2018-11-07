@@ -9,9 +9,12 @@ public class Contrato extends MedicoTemporal implements Pago{
     }
 
     @Override
-    public void CalculoPago() {
-
+    public double CalculoPago() {
+        double calcu=0;
+        return calcu;
     }
+
+    
     
     
     
